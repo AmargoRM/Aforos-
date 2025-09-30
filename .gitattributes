@@ -1,0 +1,5 @@
+*.jar binary
+
+# Enforce consistent line endings for wrapper scripts
+gradlew text eol=lf
+gradlew.bat text eol=crlf
