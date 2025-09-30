@@ -12,6 +12,7 @@ class MainActivityTest {
 
     @Test
     fun helloTextIsDisplayed() {
-        composeTestRule.onNodeWithText("Hello, Aforos!").assertIsDisplayed()
+        val greeting = composeTestRule.activity.getString(R.string.home_greeting)
+        composeTestRule.onNodeWithText(greeting).assertIsDisplayed()
     }
 }
