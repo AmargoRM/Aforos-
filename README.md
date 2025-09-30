@@ -10,8 +10,12 @@ Proyecto Android (Kotlin + Jetpack Compose) listo para CI y pruebas automáticas
 - minSdk: 26
 
 ## Cómo compilar en CI/local (sin Android Studio)
+El script `tools/ci-build.sh` encapsula los pasos que ejecuta el pipeline de CI
+usando el Gradle wrapper incluido en el repositorio. Asegúrate de tener instalado
+el Android SDK requerido (puedes guiarte por el workflow de GitHub Actions) y
+luego ejecuta:
+
 ```bash
-# Instalar Android SDK (ver workflow o tools/ci-build.sh)
 ./tools/ci-build.sh
 ```
 
